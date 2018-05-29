@@ -1,5 +1,6 @@
 # PythonSandBox
-Python Sandbox
+
+
 This is my Python Playground where I play with various Python projects.
 
 Current project added:
