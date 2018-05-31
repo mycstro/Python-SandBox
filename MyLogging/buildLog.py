@@ -15,14 +15,17 @@ except ImportError:
 class MyloLogging:
 
 	def __init__(self):
+		# print("Logging tree at init")
+		# logging_tree.printout(node=None)
+		# logging.info("Loading basic configuration")
 		logging.basicConfig(level=logging.DEBUG,
 		                    format='%(asctime)-15s %(processName)-10s %(threadName)s %(name)s %(levelname)-8s %(message)s',
 		                    datefmt='%m-%d %H:%M',
 		                    filename='/var/log/mylo/temp.log',
 		                    filemode='w')
-
+		logging.info("Setting queue size to no limit")
 		self.que = queue.Queue(-1)  # no limit on size
-
+		logging.info("Compiling list")
 		self.loggers = {}
 		self.handlers = {}
 		self.formatters = {}
@@ -73,40 +76,39 @@ class MyloLogging:
 		for items in listenerslist:
 			self.listeners[items].stop()
 
-	def loggerSetExtra(self, logname, lvl, tit='', handle='consolehand'):
-		self.loggers[logname] = logging.getLogger(tit)
+	def loggerSetExtra(self, logname, lvl, handle='quehand'):
 		slgll = self.loggers[logname]
 		slgll.propagate = True
+		logging.info("Setting Level {} to Logger {}".format(lvl, logname))
 		slgll.setLevel(lvl)
+		logging.info("Setting Handler {} to Logger {}".format(handle, logname))
 		slgch = self.handlers[handle]
 		slgll.addHandler(slgch)
 
-	def lopggerSetList(self, logname, titles="None", lvls=logging.DEBUG, handles='consolehand'):
-		for logn in logname:
-			lognamelist = logn
-			print(lognamelist)
+	def loggerSetList(self, logname, lvls=logging.DEBUG, titles="None", handlez="consolehand"):
+		for (logn, titl) in zip(logname, titles):
+			logging.info("Gathering Loggers and Titles")
 			if titles == "None":
-				title = "My_Logging"
-				logging.info("No Title Provided, \nSetting title to {}".format(title))
-				self.loggerSetExtra(lognamelist, lvls, title, handles)
+				lognamelist = logn
+				defaulttitle = "My_Logging"
+				logging.info("No Title Provided, \nSetting title to {}".format(defaulttitle))
+				logging.info("\nCreating Logger {} with propagation".format(lognamelist))
+				self.loggers[lognamelist] = logging.getLogger(defaulttitle)
+				self.loggerSetExtra(lognamelist, lvls, handlez)
 			elif titles != "None":
-				print("Not None")
-				if isinstance(titles, str):
-					print("List is not greater. the title is: {}".format(titles))
-					self.loggerSetExtra(lognamelist, lvls, titles, handles)
-				elif all(isinstance(titles, str) for item in titles):
-					print("List is greater")
-					for title in titles:
-						tit = title
-						print(tit)
-						self.loggerSetExtra(lognamelist, lvls, tit, handles)
+				lognamelist = logn
+				titlelistz = titl
+				logging.info("String Provided. Title is: {}".format(titlelistz))
+				logging.info("\nCreating Logger {} with propagation".format(lognamelist))
+				self.loggers[lognamelist] = logging.getLogger(titlelistz)
+				self.loggerSetExtra(lognamelist, lvls, handlez)
 
 	def build_logging(self):
 		# create formatters
 		sfsbf = self.formatters['BOM'] = mylog.SyslogBOMFormatter(logging.BASIC_FORMAT)
 		sfplf = self.formatters['Process'] = logging.Formatter(
-			'%(asctime)s %(processName)-10s %(threadName)s %(name)s %(levelname)-8s %(message)s')
-		sftlf = self.formatters['Thread'] = logging.Formatter('%(threadName)s: %(asctime)s - %(message)s')
+			'%(asctime)s %(process)s %(processName)-10s \n%(threadName)s %(name)s %(levelname)-8s \n%(message)s')
+		sftlf = self.formatters['Thread'] = logging.Formatter('%(thread)d %(threadName)s: %(asctime)s - %(message)s')
 		sfslf = self.formatters['Simple'] = logging.Formatter('%(asctime)s - %(name)-12s: %(levelname)-8s %(message)s')
 		sfvlf = self.formatters['Verbose'] = logging.Formatter(
 			'%(asctime)s %(processName)-10s %(name)s %(levelname)-8s %(message)s')

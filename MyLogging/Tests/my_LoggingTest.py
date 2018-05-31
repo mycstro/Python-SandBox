@@ -3,16 +3,17 @@ import sys
 from multiprocessing import Process
 from random import choice
 
+import logging_tree
+
 import buildLog as mlog
 import eValuation as eVal
-import logging_tree
-from my_Loggin import ContextFilter, LogRecordSocketReceiver, LoggingContext
+from my_Loggin import ContextFilter, CustomAdapter, LogRecordSocketReceiver, LoggingContext, StyleAdapter
 
 USERS = ['jim', 'fred', 'sheila']
 IPS = ['123.231.231.123', '127.0.0.1', '192.168.0.1']
 HOSTS = ['PC352', 'PC465', 'PC835']
 logerlist = ['mainLog', 'secondaryLog', 'rotateLog', 'usersLog', 'watchedLog']
-titlelist = ('mainLog', 'secondaryLog', 'rotateLog', 'usersLog', 'watchedLog')
+titlelist = ['Main Log', 'Secondary Log', 'Rotational Log', 'Users Log', 'Watched Log']
 
 levels = (logging.DEBUG, logging.INFO, logging.WARNING, logging.ERROR, logging.CRITICAL)
 
@@ -26,21 +27,15 @@ mlp.buildQueue()
 ## Uncomment to use single args
 # mlp.loggerSet('mainLog', logging.INFO, 'my app', 'mainfilehand')
 ## Uncomment to use a list or dict
-mlp.lopggerSetList(logerlist)
+mlp.loggerSetList(logerlist, titles=titlelist)
 
-# uselogger = mlp.loggers['watchedLog']
-# ad = CustomAdapter(uselogger, {'connid': 81})
+uselogger = mlp.loggers['watchedLog']
+ad = CustomAdapter(uselogger, {'connid': 81})
 
-# uselogger2 = mlp.loggers['rotateLog']
-# stad = StyleAdapter(uselogger2)
+uselogger2 = mlp.loggers['rotateLog']
+stad = StyleAdapter(uselogger2)
 
 mlp.startQueue()
-
-print()
-# lt =logging_tree.tree()
-# print(lt)
-logging_tree.printout(node=None)
-print()
 
 print('Starting TCP server...')
 tcpserver = LogRecordSocketReceiver()
@@ -52,10 +47,10 @@ tcpserve.start()
 mlp.loggers['mainLog'].debug('some debug message')
 mlp.loggers['secondaryLog'].debug('some secondary debug massage')
 
-# oldhandler = mlp.handlers['consolehand']
-# newhandler = mlp.handlers['mainfilehand']
-# mlp.loggers['mainLog'].removeHandler(oldhandler)
-# mlp.loggers['mainLog'].addHandler(newhandler)
+oldhandler = mlp.handlers['consolehand']
+newhandler = mlp.handlers['mainfilehand']
+mlp.loggers['mainLog'].removeHandler(oldhandler)
+mlp.loggers['mainLog'].addHandler(newhandler)
 mlp.loggers['mainLog'].debug('some debug message')
 mlp.loggers['mainLog'].info('some info message')
 mlp.loggers['mainLog'].warning('some warn message')
@@ -77,22 +72,22 @@ mlp.loggers['mainLog'].info('6. This should appear just once on stderr.')
 mlp.loggers['mainLog'].debug('7. This should not appear.')
 
 ##Reset Handlers
-# mlp.loggers['mainLog'].removeHandler(newhandler)
-# mlp.loggers['mainLog'].addHandler(oldhandler)
+mlp.loggers['mainLog'].removeHandler(newhandler)
+mlp.loggers['mainLog'].addHandler(oldhandler)
 
-# newhandler = mlp.handlers['secondfilehand']
-# mlp.loggers['secondaryLog'].addHandler(newhandler)
+newhandler = mlp.handlers['secondfilehand']
+mlp.loggers['secondaryLog'].addHandler(newhandler)
 mlp.loggers['secondaryLog'].setLevel(logging.WARNING)
 mlp.loggers['secondaryLog'].info('some secondary info')
-# mlp.loggers['secondaryLog'].removeHandler(oldhandler)
+mlp.loggers['secondaryLog'].removeHandler(oldhandler)
 mlp.loggers['secondaryLog'].warning('some secondary warning')
 mlp.loggers['secondaryLog'].error('another secondary error message')
 
 ##Reset Handlers
-# mlp.loggers['secondaryLog'].removeHandler(newhandler)
+mlp.loggers['secondaryLog'].removeHandler(newhandler)
 
-# newhandler = mlp.handlers['userfilehand']
-# mlp.loggers['usersLog'].addHandler(newhandler)
+newhandler = mlp.handlers['userfilehand']
+mlp.loggers['usersLog'].addHandler(newhandler)
 mlp.loggers['usersLog'].setLevel(logging.DEBUG)
 mlp.loggers['usersLog'].addFilter(f)
 
@@ -106,25 +101,25 @@ for x in range(10):
 	mlp.loggers['usersLog'].log(lvl, 'A message at %s level with %d %s', lvlname, 2, 'some parameters')
 
 ##Reset Handlers
-# mlp.loggers['usersLog'].removeHandler(newhandler)
+mlp.loggers['usersLog'].removeHandler(newhandler)
 
-# newhandler = mlp.handlers['rotatehand']
-# mlp.loggers['rotateLog'].addHandler(newhandler)
+newhandler = mlp.handlers['rotatehand']
+mlp.loggers['rotateLog'].addHandler(newhandler)
 mlp.loggers['rotateLog'].critical('Look Out!!!!')
 
-# mlp.loggers['rotateLog'].removeHandler(newhandler)
+mlp.loggers['rotateLog'].removeHandler(newhandler)
 
-# newhandler = mlp.handlers['watchFile']
-# mlp.loggers['watchedLog'].addHandler(newhandler)
+newhandler = mlp.handlers['watchFile']
+mlp.loggers['watchedLog'].addHandler(newhandler)
 mlp.loggers['watchedLog'].critical('It is All Bad!!!')
 
 ##Reset All Handlers
-# mlp.loggers['watchedLog'].removeHandler(newhandler)
-# mlp.loggers['watchedLog'].addHandler(oldhandler)
+mlp.loggers['watchedLog'].removeHandler(newhandler)
+mlp.loggers['watchedLog'].addHandler(oldhandler)
 
-# mlp.loggers['watchedLog'].removeHandler(oldhandler)
-# newhandler = mlp.handlers['sockethand']
-# mlp.loggers['watchedLog'].addHandler(newhandler)
+mlp.loggers['watchedLog'].removeHandler(oldhandler)
+newhandler = mlp.handlers['sockethand']
+mlp.loggers['watchedLog'].addHandler(newhandler)
 
 for x in range(10):
 	lvl = choice(levels)
@@ -135,6 +130,13 @@ for x in range(10):
 # myls.start_log_server(8080)
 
 # myls.stop_log_server()
+
+
+print("Current logging tree after tests")
+logging_tree.printout(node=None)
+print()
+
+
 print('stopping que')
 mlp.stopQueue()
 print('Main Test Done!')
@@ -142,15 +144,20 @@ print('Main Test Done!')
 context = dict(vars(logging))
 context['handlers'] = mlp.handlers
 evaluator = eVal.Evaluator(context, True)
-while True:
-	line = input('Enter source to evaluate or enter to exit:').strip()
-	if not line:
-		break
-	try:
-		result = evaluator.evaluate(line.strip(), '<interactive>')
-		print(result)
-	except eVal.EvaluationError as e:
-		print(e)
+try:
+	while True:
+		line = input('Enter source to evaluate or enter to exit:').strip()
+		if not line:
+			break
+		try:
+			result = evaluator.evaluate(line.strip(), '<interactive>')
+			print(result)
+		except eVal.EvaluationError as e:
+			print(e)
+except KeyboardInterrupt:
+	tcpserve.terminate()
+	print('Log Processing Test Complete!')
+	exit(0)
 
 tcpserve.terminate()
 print('Log Processing Test Complete!')

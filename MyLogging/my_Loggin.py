@@ -321,9 +321,6 @@ class LoggingContext(object):
 			self.handler.close()
 
 
-# implicit return of None => don't swallow exceptions
-
-
 class Log_Server():
 	def start_log_server(self, port):
 		# read initial config file
@@ -408,3 +405,4 @@ class setListeningPort():
 	def __init__(self, port):
 		lp = logging.config.listen(port)
 		lp.start()
+

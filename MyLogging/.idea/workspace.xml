@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c411ea46-229e-4fb6-a387-d5e38cfb6c61" name="Default" comment="This is the first import. Module is not ready for production">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/my_LoggingTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buildLog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eValuation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_Loggin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyLogging.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyLogging.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/my_LoggingTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/my_LoggingTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildLog.py" beforeDir="false" afterPath="$PROJECT_DIR$/buildLog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_Loggin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_Loggin.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,15 +17,190 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="eValuation.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/eValuation.py">
+              <provider selected="true" editor-type-id="live-pycharm">
+                <state>
+                  <first_editor />
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="my_Loggin.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/my_Loggin.py">
+              <provider selected="true" editor-type-id="live-pycharm">
+                <state>
+                  <first_editor>
+                    <folding>
+                      <element signature="e#277#2102#0" />
+                      <element signature="e#277#528#1" />
+                      <element signature="e#560#673#0" />
+                      <element signature="e#560#619#1" />
+                      <element signature="e#705#921#0" />
+                      <element signature="e#705#889#1" />
+                      <element signature="e#953#1843#0" />
+                      <element signature="e#953#1365#1" />
+                      <element signature="e#1368#1431#0" />
+                      <element signature="e#1872#2102#0" />
+                      <element signature="e#1872#1968#1" />
+                      <element signature="e#2165#5576#0" />
+                      <element signature="e#2165#2348#1" />
+                      <element signature="e#2410#2811#0" />
+                      <element signature="e#2472#2547#1" />
+                      <element signature="e#2630#2656#0" />
+                      <element signature="e#2814#2841#0" />
+                      <element signature="e#3119#3444#0" />
+                      <element signature="e#3119#3237#1" />
+                      <element signature="e#3240#3299#0" />
+                      <element signature="e#3476#3731#0" />
+                      <element signature="e#3476#3714#1" />
+                      <element signature="e#3762#4088#0" />
+                      <element signature="e#3762#3917#1" />
+                      <element signature="e#3985#4088#0" />
+                      <element signature="e#4121#4238#0" />
+                      <element signature="e#4121#4174#1" />
+                      <element signature="e#4274#4406#0" />
+                      <element signature="e#4274#4332#1" />
+                      <element signature="e#4364#4406#0" />
+                      <element signature="e#4431#5153#0" />
+                      <element signature="e#4431#4636#1" />
+                      <element signature="e#4732#4909#0" />
+                      <element signature="e#4741#4877#0" />
+                      <element signature="e#4974#5153#0" />
+                      <element signature="e#4983#5120#0" />
+                      <element signature="e#5174#5576#0" />
+                      <element signature="e#5174#5418#1" />
+                      <element signature="e#5480#5501#0" />
+                      <element signature="e#5640#6117#0" />
+                      <element signature="e#5640#5829#1" />
+                      <element signature="e#5852#6117#0" />
+                      <element signature="e#6193#6571#0" />
+                      <element signature="e#6213#6571#0" />
+                      <element signature="e#6213#6271#0" />
+                      <element signature="e#6452#6515#0" />
+                      <element signature="e#6640#7418#0" />
+                      <element signature="e#6704#7168#0" />
+                      <element signature="e#6704#6769#0" />
+                      <element signature="e#6835#7168#0" />
+                      <element signature="e#7009#7168#0" />
+                      <element signature="e#7199#7224#0" />
+                      <element signature="e#7264#7418#0" />
+                      <element signature="e#7467#7542#0" />
+                      <element signature="e#7495#7542#0" />
+                      <element signature="e#7598#7838#0" />
+                      <element signature="e#7637#7701#0" />
+                      <element signature="e#7732#7838#0" />
+                      <element signature="e#7880#8189#0" />
+                      <element signature="e#7933#8033#0" />
+                      <element signature="e#8064#8189#0" />
+                      <element signature="e#8223#8786#0" />
+                      <element signature="e#8291#8378#0" />
+                      <element signature="e#8404#8563#0" />
+                      <element signature="e#8434#8504#0" />
+                      <element signature="e#8600#8786#0" />
+                    </folding>
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="buildLog.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/buildLog.py">
+              <provider selected="true" editor-type-id="live-pycharm">
+                <state>
+                  <first_editor relative-caret-position="285">
+                    <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+                  </first_editor>
+                  <second_editor relative-caret-position="-105" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="my_LoggingTest.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tests/my_LoggingTest.py">
+              <provider selected="true" editor-type-id="live-pycharm">
+                <state>
+                  <first_editor relative-caret-position="150">
+                    <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+                    <folding>
+                      <element signature="e#0#21#0" expanded="true" />
+                    </folding>
+                  </first_editor>
+                  <second_editor relative-caret-position="-105" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="main.log" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tests/main.log">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-730" />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="secondary.log" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tests/secondary.log">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="users.log" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tests/users.log">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="rotate.log" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tests/rotate.log">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="watchedLog.log" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Tests/watchedLog.log">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="temp.log" pinned="false" current-in-tab="true">
+            <entry file="file:///var/log/mylo/temp.log">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="mycstro &lt;michael.mcrtech@gmail.com&gt;" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Tests/main.log" />
+        <option value="$PROJECT_DIR$/Tests/rotate.log" />
+        <option value="$PROJECT_DIR$/Tests/secondary.log" />
+        <option value="$PROJECT_DIR$/Tests/users.log" />
+        <option value="$PROJECT_DIR$/Tests/watchedLog.log" />
+        <option value="/var/log/mylo/temp.log" />
+        <option value="$PROJECT_DIR$/my_Loggin.py" />
+        <option value="$PROJECT_DIR$/Tests/my_LoggingTest.py" />
+        <option value="$PROJECT_DIR$/buildLog.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="-1" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
@@ -34,29 +210,17 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MyLogging" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyLogging" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="studioMain" />
+    <property name="last_opened_file_path" value="/var/log/mylo/temp.log" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <console-settings is-module-sdk="true">
+      <console-settings module-name="MyLogging" is-module-sdk="true">
         <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="MyLogging" />
       </console-settings>
     </option>
   </component>
@@ -71,6 +235,31 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="my_LoggingTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MyLogging" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/my_LoggingTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.my_LoggingTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -95,35 +284,62 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="-27" width="1920" height="1107" extended-state="0" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="13" sideWeight="0.50053364" side_tool="true" visible="true" weight="0.32938644" />
+      <window_info anchor="right" id="TODO" order="8" sideWeight="0.50213444" weight="0.32817504" />
       <window_info anchor="right" id="DB Browser" order="7" sideWeight="0.506734" side_tool="true" weight="0.24924242" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5087848" side_tool="true" weight="0.38897893" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4909091" weight="0.26262626" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.4994664" visible="true" weight="0.32938644" />
-      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.4909091" weight="0.28451177" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49121523" weight="0.3888889" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5087848" side_tool="true" weight="0.38897893" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48665956" weight="0.3258427" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49786553" visible="true" weight="0.3278856" />
+      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.4909091" weight="0.28451177" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.51013875" side_tool="true" weight="0.3258427" />
       <window_info id="FAQ Robot" order="3" side_tool="true" weight="0.32954547" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="5" sideWeight="0.46296296" visible="true" weight="0.2230523" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="5" sideWeight="0.46296296" visible="true" weight="0.22572039" />
       <window_info id="Project Explorer" order="1" weight="0.329429" />
       <window_info id="Job Explorer" order="2" />
       <window_info anchor="bottom" id="Console" order="11" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
       <window_info anchor="right" id="Structure" order="6" sideWeight="0.537037" side_tool="true" weight="0.30757576" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4124579" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.5133405" side_tool="true" weight="0.3258427" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32996634" />
       <window_info anchor="right" id="Data View" order="4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32996634" />
-      <window_info anchor="right" x="0" y="0" width="283" height="528" id="Documentation" order="3" visible="true" weight="0.32919255" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" x="0" y="0" width="283" height="528" id="Documentation" order="3" visible="true" weight="0.32919255" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -131,11 +347,496 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="This is the first import. Module is not ready for production" />
     <option name="LAST_COMMIT_MESSAGE" value="This is the first import. Module is not ready for production" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Tests/my_LoggingTest.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/buildLog.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="mlp" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/eValuation.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_Loggin.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor>
+            <folding>
+              <element signature="e#277#2102#0" />
+              <element signature="e#277#528#1" />
+              <element signature="e#560#673#0" />
+              <element signature="e#560#619#1" />
+              <element signature="e#705#921#0" />
+              <element signature="e#705#889#1" />
+              <element signature="e#953#1843#0" />
+              <element signature="e#953#1365#1" />
+              <element signature="e#1368#1431#0" />
+              <element signature="e#1872#2102#0" />
+              <element signature="e#1872#1968#1" />
+              <element signature="e#2165#5576#0" />
+              <element signature="e#2165#2348#1" />
+              <element signature="e#2410#2811#0" />
+              <element signature="e#2472#2547#1" />
+              <element signature="e#2630#2656#0" />
+              <element signature="e#2814#2841#0" />
+              <element signature="e#3119#3444#0" />
+              <element signature="e#3119#3237#1" />
+              <element signature="e#3240#3299#0" />
+              <element signature="e#3476#3731#0" />
+              <element signature="e#3476#3714#1" />
+              <element signature="e#3762#4088#0" />
+              <element signature="e#3762#3917#1" />
+              <element signature="e#3985#4088#0" />
+              <element signature="e#4121#4238#0" />
+              <element signature="e#4121#4174#1" />
+              <element signature="e#4274#4406#0" />
+              <element signature="e#4274#4332#1" />
+              <element signature="e#4364#4406#0" />
+              <element signature="e#4431#5153#0" />
+              <element signature="e#4431#4636#1" />
+              <element signature="e#4732#4909#0" />
+              <element signature="e#4741#4877#0" />
+              <element signature="e#4974#5153#0" />
+              <element signature="e#4983#5120#0" />
+              <element signature="e#5174#5576#0" />
+              <element signature="e#5174#5418#1" />
+              <element signature="e#5480#5501#0" />
+              <element signature="e#5640#6117#0" />
+              <element signature="e#5640#5829#1" />
+              <element signature="e#5852#6117#0" />
+              <element signature="e#6193#6571#0" />
+              <element signature="e#6213#6571#0" />
+              <element signature="e#6213#6271#0" />
+              <element signature="e#6452#6515#0" />
+              <element signature="e#6640#7418#0" />
+              <element signature="e#6704#7168#0" />
+              <element signature="e#6704#6769#0" />
+              <element signature="e#6835#7168#0" />
+              <element signature="e#7009#7168#0" />
+              <element signature="e#7199#7224#0" />
+              <element signature="e#7264#7418#0" />
+              <element signature="e#7467#7542#0" />
+              <element signature="e#7495#7542#0" />
+              <element signature="e#7598#7838#0" />
+              <element signature="e#7637#7701#0" />
+              <element signature="e#7732#7838#0" />
+              <element signature="e#7880#8189#0" />
+              <element signature="e#7933#8033#0" />
+              <element signature="e#8064#8189#0" />
+              <element signature="e#8223#8786#0" />
+              <element signature="e#8291#8378#0" />
+              <element signature="e#8404#8563#0" />
+              <element signature="e#8434#8504#0" />
+              <element signature="e#8600#8786#0" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/my_LoggingTest.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="450">
+            <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <folding>
+              <element signature="e#0#21#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildLog.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="1440">
+            <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eValuation.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_Loggin.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor>
+            <folding>
+              <element signature="e#277#2102#0" />
+              <element signature="e#277#528#1" />
+              <element signature="e#560#673#0" />
+              <element signature="e#560#619#1" />
+              <element signature="e#705#921#0" />
+              <element signature="e#705#889#1" />
+              <element signature="e#953#1843#0" />
+              <element signature="e#953#1365#1" />
+              <element signature="e#1368#1431#0" />
+              <element signature="e#1872#2102#0" />
+              <element signature="e#1872#1968#1" />
+              <element signature="e#2165#5576#0" />
+              <element signature="e#2165#2348#1" />
+              <element signature="e#2410#2811#0" />
+              <element signature="e#2472#2547#1" />
+              <element signature="e#2630#2656#0" />
+              <element signature="e#2814#2841#0" />
+              <element signature="e#3119#3444#0" />
+              <element signature="e#3119#3237#1" />
+              <element signature="e#3240#3299#0" />
+              <element signature="e#3476#3731#0" />
+              <element signature="e#3476#3714#1" />
+              <element signature="e#3762#4088#0" />
+              <element signature="e#3762#3917#1" />
+              <element signature="e#3985#4088#0" />
+              <element signature="e#4121#4238#0" />
+              <element signature="e#4121#4174#1" />
+              <element signature="e#4274#4406#0" />
+              <element signature="e#4274#4332#1" />
+              <element signature="e#4364#4406#0" />
+              <element signature="e#4431#5153#0" />
+              <element signature="e#4431#4636#1" />
+              <element signature="e#4732#4909#0" />
+              <element signature="e#4741#4877#0" />
+              <element signature="e#4974#5153#0" />
+              <element signature="e#4983#5120#0" />
+              <element signature="e#5174#5576#0" />
+              <element signature="e#5174#5418#1" />
+              <element signature="e#5480#5501#0" />
+              <element signature="e#5640#6117#0" />
+              <element signature="e#5640#5829#1" />
+              <element signature="e#5852#6117#0" />
+              <element signature="e#6193#6571#0" />
+              <element signature="e#6213#6571#0" />
+              <element signature="e#6213#6271#0" />
+              <element signature="e#6452#6515#0" />
+              <element signature="e#6640#7418#0" />
+              <element signature="e#6704#7168#0" />
+              <element signature="e#6704#6769#0" />
+              <element signature="e#6835#7168#0" />
+              <element signature="e#7009#7168#0" />
+              <element signature="e#7199#7224#0" />
+              <element signature="e#7264#7418#0" />
+              <element signature="e#7467#7542#0" />
+              <element signature="e#7495#7542#0" />
+              <element signature="e#7598#7838#0" />
+              <element signature="e#7637#7701#0" />
+              <element signature="e#7732#7838#0" />
+              <element signature="e#7880#8189#0" />
+              <element signature="e#7933#8033#0" />
+              <element signature="e#8064#8189#0" />
+              <element signature="e#8223#8786#0" />
+              <element signature="e#8291#8378#0" />
+              <element signature="e#8404#8563#0" />
+              <element signature="e#8434#8504#0" />
+              <element signature="e#8600#8786#0" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/my_LoggingTest.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="450">
+            <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <folding>
+              <element signature="e#0#21#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildLog.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="1440">
+            <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eValuation.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_Loggin.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor>
+            <folding>
+              <element signature="e#277#2102#0" />
+              <element signature="e#277#528#1" />
+              <element signature="e#560#673#0" />
+              <element signature="e#560#619#1" />
+              <element signature="e#705#921#0" />
+              <element signature="e#705#889#1" />
+              <element signature="e#953#1843#0" />
+              <element signature="e#953#1365#1" />
+              <element signature="e#1368#1431#0" />
+              <element signature="e#1872#2102#0" />
+              <element signature="e#1872#1968#1" />
+              <element signature="e#2165#5576#0" />
+              <element signature="e#2165#2348#1" />
+              <element signature="e#2410#2811#0" />
+              <element signature="e#2472#2547#1" />
+              <element signature="e#2630#2656#0" />
+              <element signature="e#2814#2841#0" />
+              <element signature="e#3119#3444#0" />
+              <element signature="e#3119#3237#1" />
+              <element signature="e#3240#3299#0" />
+              <element signature="e#3476#3731#0" />
+              <element signature="e#3476#3714#1" />
+              <element signature="e#3762#4088#0" />
+              <element signature="e#3762#3917#1" />
+              <element signature="e#3985#4088#0" />
+              <element signature="e#4121#4238#0" />
+              <element signature="e#4121#4174#1" />
+              <element signature="e#4274#4406#0" />
+              <element signature="e#4274#4332#1" />
+              <element signature="e#4364#4406#0" />
+              <element signature="e#4431#5153#0" />
+              <element signature="e#4431#4636#1" />
+              <element signature="e#4732#4909#0" />
+              <element signature="e#4741#4877#0" />
+              <element signature="e#4974#5153#0" />
+              <element signature="e#4983#5120#0" />
+              <element signature="e#5174#5576#0" />
+              <element signature="e#5174#5418#1" />
+              <element signature="e#5480#5501#0" />
+              <element signature="e#5640#6117#0" />
+              <element signature="e#5640#5829#1" />
+              <element signature="e#5852#6117#0" />
+              <element signature="e#6193#6571#0" />
+              <element signature="e#6213#6571#0" />
+              <element signature="e#6213#6271#0" />
+              <element signature="e#6452#6515#0" />
+              <element signature="e#6640#7418#0" />
+              <element signature="e#6704#7168#0" />
+              <element signature="e#6704#6769#0" />
+              <element signature="e#6835#7168#0" />
+              <element signature="e#7009#7168#0" />
+              <element signature="e#7199#7224#0" />
+              <element signature="e#7264#7418#0" />
+              <element signature="e#7467#7542#0" />
+              <element signature="e#7495#7542#0" />
+              <element signature="e#7598#7838#0" />
+              <element signature="e#7637#7701#0" />
+              <element signature="e#7732#7838#0" />
+              <element signature="e#7880#8189#0" />
+              <element signature="e#7933#8033#0" />
+              <element signature="e#8064#8189#0" />
+              <element signature="e#8223#8786#0" />
+              <element signature="e#8291#8378#0" />
+              <element signature="e#8404#8563#0" />
+              <element signature="e#8434#8504#0" />
+              <element signature="e#8600#8786#0" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/my_LoggingTest.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="450">
+            <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <folding>
+              <element signature="e#0#21#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildLog.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="1440">
+            <caret line="96" column="34" lean-forward="true" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/miniconda3/lib/python3.6/logging/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/eValuation.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_Loggin.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor>
+            <folding>
+              <element signature="e#277#2102#0" />
+              <element signature="e#277#528#1" />
+              <element signature="e#560#673#0" />
+              <element signature="e#560#619#1" />
+              <element signature="e#705#921#0" />
+              <element signature="e#705#889#1" />
+              <element signature="e#953#1843#0" />
+              <element signature="e#953#1365#1" />
+              <element signature="e#1368#1431#0" />
+              <element signature="e#1872#2102#0" />
+              <element signature="e#1872#1968#1" />
+              <element signature="e#2165#5576#0" />
+              <element signature="e#2165#2348#1" />
+              <element signature="e#2410#2811#0" />
+              <element signature="e#2472#2547#1" />
+              <element signature="e#2630#2656#0" />
+              <element signature="e#2814#2841#0" />
+              <element signature="e#3119#3444#0" />
+              <element signature="e#3119#3237#1" />
+              <element signature="e#3240#3299#0" />
+              <element signature="e#3476#3731#0" />
+              <element signature="e#3476#3714#1" />
+              <element signature="e#3762#4088#0" />
+              <element signature="e#3762#3917#1" />
+              <element signature="e#3985#4088#0" />
+              <element signature="e#4121#4238#0" />
+              <element signature="e#4121#4174#1" />
+              <element signature="e#4274#4406#0" />
+              <element signature="e#4274#4332#1" />
+              <element signature="e#4364#4406#0" />
+              <element signature="e#4431#5153#0" />
+              <element signature="e#4431#4636#1" />
+              <element signature="e#4732#4909#0" />
+              <element signature="e#4741#4877#0" />
+              <element signature="e#4974#5153#0" />
+              <element signature="e#4983#5120#0" />
+              <element signature="e#5174#5576#0" />
+              <element signature="e#5174#5418#1" />
+              <element signature="e#5480#5501#0" />
+              <element signature="e#5640#6117#0" />
+              <element signature="e#5640#5829#1" />
+              <element signature="e#5852#6117#0" />
+              <element signature="e#6193#6571#0" />
+              <element signature="e#6213#6571#0" />
+              <element signature="e#6213#6271#0" />
+              <element signature="e#6452#6515#0" />
+              <element signature="e#6640#7418#0" />
+              <element signature="e#6704#7168#0" />
+              <element signature="e#6704#6769#0" />
+              <element signature="e#6835#7168#0" />
+              <element signature="e#7009#7168#0" />
+              <element signature="e#7199#7224#0" />
+              <element signature="e#7264#7418#0" />
+              <element signature="e#7467#7542#0" />
+              <element signature="e#7495#7542#0" />
+              <element signature="e#7598#7838#0" />
+              <element signature="e#7637#7701#0" />
+              <element signature="e#7732#7838#0" />
+              <element signature="e#7880#8189#0" />
+              <element signature="e#7933#8033#0" />
+              <element signature="e#8064#8189#0" />
+              <element signature="e#8223#8786#0" />
+              <element signature="e#8291#8378#0" />
+              <element signature="e#8404#8563#0" />
+              <element signature="e#8434#8504#0" />
+              <element signature="e#8600#8786#0" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildLog.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="285">
+            <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+          </first_editor>
+          <second_editor relative-caret-position="-105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/my_LoggingTest.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="150">
+            <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <folding>
+              <element signature="e#0#21#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/watchedLog.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/rotate.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/users.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/secondary.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/main.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-730" />
+      </provider>
+    </entry>
+    <entry file="file:///var/log/mylo/temp.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
